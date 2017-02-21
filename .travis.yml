@@ -6,12 +6,12 @@ before_install:
 before_install:
 - gem install asciidoctor -v 1.5.2
 - gem install tilt
-- sudo pip install git+https://github.com/gitenberg-dev/gitberg.git@e86d5e5d6de6cd14ba76b305ddd015c36d92ebf6
+- sudo pip install git+https://github.com/gitenberg-dev/gitberg
 - sudo pip install pillow
 - sudo pip install cssutils
-- sudo pip install docutils==0.12
+- sudo pip install docutils
 - sudo pip install roman
-- sudo pip install git+https://github.com/gitenberg-dev/pg-epubmaker.git@391122421960ca28f6f908984babc9bb6b7f7e99
+- sudo pip install git+https://github.com/gitenberg-dev/pg-epubmaker
 script:
 - VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
 - git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
