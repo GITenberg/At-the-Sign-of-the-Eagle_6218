@@ -6,7 +6,7 @@ before_install:
 before_install:
 - gem install asciidoctor -v 1.5.2
 - gem install tilt
-- sudo pip install git+https://github.com/gitenberg-dev/gitberg.git@55942e9812fd33b18ff93598a4d17567f6e8f2fc
+- sudo pip install git+https://github.com/gitenberg-dev/gitberg.git@e86d5e5d6de6cd14ba76b305ddd015c36d92ebf6
 - sudo pip install pillow
 - sudo pip install cssutils
 - sudo pip install docutils
