@@ -10,7 +10,7 @@ before_install:
 - sudo pip install cssutils
 - sudo pip install docutils
 - sudo pip install roman
-- sudo pip install git+https://github.com/gitenberg-dev/pg-epubmaker.git@8fb71cc66c6e99f41272fbc770fbd096a4c13975
+- sudo pip install git+https://github.com/gitenberg-dev/pg-epubmaker.git@dd926742e60983f8497606edeeb56a745002e5bf
 script:
 - VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
 - git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
